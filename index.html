@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style_enc.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+
+    <main class="container">
+
+        <header>
+            <img src="img/Logo.svg" alt="logo">
+            <li>
+                <a href="none"></a>
+                <a href="none"></a>
+            </li>
+        </header>
+        <div class="f">
+            <div class="flexx">
+
+                <div class="textbox">
+                    <div class="texto">
+                        <p onclick="redireccion()">Ingresa aqui el texto...</p>
+                    </div>
+
+                    <div class="btn">
+                        <div class="elespan">
+                            <span> &#9786; Solo letras minusculas y sin acentos</span>
+                        </div>
+
+                        <div class="inbtn">
+                            <button class="btnen" id="encript">Encriptar</button>
+                            <button class="btndes" id="desencript">Desencriptar</button> 
+                            
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="result">
+
+                    <div class="text_result">
+                        <img src="img/Muñeco.svg" alt="">
+                        <h2>Ningún mensaje fue encontrado</h2>
+                        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <footer>
+            <p> &#169; Codigo JV 2024</p>
+        </footer>
+
+    </main>
+
+
+
+</body>
+<script>
+    var btn = document.querySelector("#encript");
+    btn.onclick = encriptar;
+    var btn2 = document.querySelector("#desencript");
+    btn2.onclick = desencriptar;
+    var btn3 = document.querySelector("#copiar");
+    btn3.onclick = copiar;
+
+</script>
+</html>
